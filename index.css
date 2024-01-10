@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0
+}
+
+.logo img{
+    width: 70px;
+    height: 60px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-list button{
+    padding: 5px 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav-list button:hover{
+    background-color: rgb(231, 225, 218);
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(238, 235, 231);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(189, 179, 179);
+}
