@@ -74,7 +74,45 @@
                 "last 2 chrome version",
                 "last 2 safari version"
                ]
-  
+
+### 3. Learning form third episode(Laying the foundation)
+
++ **script in package.json**<br>
+     ---> "script" : { "start": "parcel index.html",
+                       "build" : "parcel build index.html"
+  }
+     ---> now i can run the project by just **npm run start**
+
++ **JSX is not the part of react**
+
++ **JSX is not html in js**
+
++ **JSX is html like syntax**
+
++ **babel transpiles/convert the jsx to browser understandable code**
+
++ **React.createElement --> ReactElement - js object --> HTML Element(render)**
+
++ ** jsx --> React.createElement --> js object --> HTML Element(render) **
+
++ **class based component(old) vs Functional component(new)**
+
++ **Functional component is normal javascript function**
+
++ **component name should start with capital letter**
+
++ **React functional component is a function which return some piece of JSX**
+
++ **Component Composition is a component inside component**
+
++ **We can write javascript insidie JSX using "{}"**
+
++ **We can execute component in three ways**<br>
+  ---> {Title()}
+  ---> <Title> </Title>
+  ---> <Title/>
+
+
 
   
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
