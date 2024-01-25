@@ -1,5 +1,5 @@
 # Started learning react from akshya saini sir with namaste react
-### 1. Learning from first episode (INCEPTION)
+## 1. Learning from first episode (INCEPTION)
 + **CDN** <br>
           ----> CDN(Content Delivery Network) allows for the quick transfer of assests needed for loading internet content, including HTML pages, js files, images and videos. <br>
 
@@ -15,7 +15,7 @@
   ---> Framework comes with the load, can't be applied to specific part of the page.<br>
   <br>
   
-### 2. Learning from second episode (Ignite Your App)
+## 2. Learning from second episode (Ignite Your App)
 
 + **NPM** <br>
       ---> NPM doesn't stand for Node Package Manager, it's actually a package manager.<br>
@@ -75,7 +75,7 @@
                 "last 2 safari version"
                ]
 
-### 3. Learning form third episode(Laying the foundation)
+## 3. Learning form third episode(Laying the foundation)
 
 + **script in package.json**<br>
      ---> "script" : { "start": "parcel index.html",
@@ -112,7 +112,34 @@
   ---> <Title> </Title>
   ---> <Title/>
 
+## 4. Learning from fourth episode (Talk is cheap show me the code)
 
++ **Before building your app/project we should first plan our structure and flow of our app**<br>
+
++ **Configdriven UI**<br>
+
+ ---> Controlling your UI using data(config).<br>
+ ---> Changing interface according to data which comes from backend.<br>
+web application consist of UI and data layer.<br>
+ ---> it is very important that our ui layer syncs with data layer.<br>
+
++ **Optional chaining**<br>
+
+ ---> Normal way to get data from obj is: obj.name.<br>
+ ---> what if our data/obj will come in production or will come dynamically or will come after some time.<br>
+ ---> so if we use "obj.name" it will give error, bcz obj.name is not there yet, it will come later.<br>
+ ---> so we will use optional chaining i.e adding "?".<br>
+---> "obj?.name".<br>
+
++ **we can use array.map() fuction to iterate an array and display data**<br>
+
+  
++ **key**<br>
+
+ ---> It is important to give keys to all the element in the array, most important while using map() function.<br>
+ ---> key uniquely represent all the elements in the array.<br>
+ ---> If we will not give keys, react will re-render all the components again and again every time when new element will be added.<br>
+ ---> If we will give keys react will only render new element.<br>
 
   
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
