@@ -177,6 +177,25 @@
 + **useState() syntax**
 
     ---> Const[value, setValue] = useState("initialvalue")
+    ---> setValue(updatedValue)
+
++ **Whenever statevariable update's react re-render the component**
+
++ **Reconciliation Algorithm(React fiber) started from React**
+
+    ---> When something changes in UI it is called reconciliation.
+
++ **Virtual Dom**
+
+    ---> Representation of Actual dom in the form of object.
+
++ **React element is in the form of object that object is called virtual dom**
+
++ **Diff algorithm**
+  
+      ---> Finds out the difference between current virtual dom and updated virtual dom.
+      ---> Then it will update the actuall dom on every render cycle.
+
   
 
   
