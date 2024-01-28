@@ -141,7 +141,7 @@
   ---> If we will not give keys, react will re-render all the components again and again every time when new element will be added.<br>
   ---> If we will give keys react will only render new element.<br>
 
-## 4. Learning from fifth episode (Let's get Hooked)
+## 5. Learning from fifth episode (Let's get Hooked)
 
 + **Keep your component in seprate file and name file same as component**
 
@@ -192,7 +192,6 @@
 + **React element is in the form of object that object is called virtual dom**
 
 + **Diff algorithm**
-
       ---> Finds out the difference between current virtual dom and updated virtual dom.
       ---> Then it will update the actuall dom on every render cycle.
 
