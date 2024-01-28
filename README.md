@@ -141,7 +141,7 @@
   ---> If we will not give keys, react will re-render all the components again and again every time when new element will be added.<br>
   ---> If we will give keys react will only render new element.<br>
 
-### Learning from fifth episode (Let's get Hooked)
+## 4. Learning from fifth episode (Let's get Hooked)
 
 + **Keep your component in seprate file and name file same as component**
 
