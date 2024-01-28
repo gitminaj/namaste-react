@@ -192,7 +192,7 @@
 + **React element is in the form of object that object is called virtual dom**
 
 + **Diff algorithm**
-  
+
       ---> Finds out the difference between current virtual dom and updated virtual dom.
       ---> Then it will update the actuall dom on every render cycle.
 
