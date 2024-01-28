@@ -151,14 +151,14 @@
 
 + **Default vs named export/import**
 
-    ---> **Default** export is only allowed once in a file.
-    ---> We can do multiple **Named** export in a file.
-    ---> Default export/import syntax
-       ---> export default "name".
-       ---> import "name" from "file_dest".
-    ---> import export/import syntax
-       ---> export "name".
-       ---> import { "name" } from "file_dest".
+    ---> **Default** export is only allowed once in a file.<br>
+    ---> We can do multiple **Named** export in a file.<br>
+    ---> Default export/import syntax<br>
+       ---> export default "name".<br>
+       ---> import "name" from "file_dest".<br>
+    ---> import export/import syntax<br>
+       ---> export "name".<br>
+       ---> import { "name" } from "file_dest".<br>
 
 + **React is fast because it can do faster dom manipulation.**
   
@@ -166,8 +166,9 @@
 
 + **Hooks are normal js function written by developer**
 
-+ **Most important hooks**
-    ---> useState()
++ **Most important hooks**<br>
+
+    ---> useState()<br>
     ---> useEffect()
 
 + **Before using hooks import it as name import from react**
@@ -176,7 +177,7 @@
 
 + **useState() syntax**
 
-    ---> Const[value, setValue] = useState("initialvalue")
+    ---> Const[value, setValue] = useState("initialvalue")<br>
     ---> setValue(updatedValue)
 
 + **Whenever statevariable update's react re-render the component**
@@ -191,8 +192,8 @@
 
 + **React element is in the form of object that object is called virtual dom**
 
-+ **Diff algorithm**
-      ---> Finds out the difference between current virtual dom and updated virtual dom.
++ **Diff algorithm**<br>
+      ---> Finds out the difference between current virtual dom and updated virtual dom.<br>
       ---> Then it will update the actuall dom on every render cycle.
 
   
