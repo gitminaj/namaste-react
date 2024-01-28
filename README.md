@@ -118,28 +118,66 @@
 
 + **Configdriven UI**<br>
 
- ---> Controlling your UI using data(config).<br>
- ---> Changing interface according to data which comes from backend.<br>
-web application consist of UI and data layer.<br>
- ---> it is very important that our ui layer syncs with data layer.<br>
+  ---> Controlling your UI using data(config).<br>
+  ---> Changing interface according to data which comes from backend.<br>
+ web application consist of UI and data layer.<br>
+  ---> it is very important that our ui layer syncs with data layer.<br>
 
 + **Optional chaining**<br>
 
- ---> Normal way to get data from obj is: obj.name.<br>
- ---> what if our data/obj will come in production or will come dynamically or will come after some time.<br>
- ---> so if we use "obj.name" it will give error, bcz obj.name is not there yet, it will come later.<br>
- ---> so we will use optional chaining i.e adding "?".<br>
----> "obj?.name".<br>
+  ---> Normal way to get data from obj is: obj.name.<br>
+  ---> what if our data/obj will come in production or will come dynamically or will come after some time.<br>
+  ---> so if we use "obj.name" it will give error, bcz obj.name is not there yet, it will come later.<br>
+  ---> so we will use optional chaining i.e adding "?".<br>
+  ---> "obj?.name".<br>
 
 + **we can use array.map() fuction to iterate an array and display data**<br>
 
   
 + **key**<br>
 
- ---> It is important to give keys to all the element in the array, most important while using map() function.<br>
- ---> key uniquely represent all the elements in the array.<br>
- ---> If we will not give keys, react will re-render all the components again and again every time when new element will be added.<br>
- ---> If we will give keys react will only render new element.<br>
+  ---> It is important to give keys to all the element in the array, most important while using map() function.<br>
+  ---> key uniquely represent all the elements in the array.<br>
+  ---> If we will not give keys, react will re-render all the components again and again every time when new element will be added.<br>
+  ---> If we will give keys react will only render new element.<br>
+
+### Learning from fifth episode (Let's get Hooked)
+
++ **Keep your component in seprate file and name file same as component**
+
++ **Component name should start with capital letter**
+
++ **Never keep hard coded/constant value in your component make a seperate file/folder**
+
++ **Default vs named export/import**
+
+    ---> **Default** export is only allowed once in a file.
+    ---> We can do multiple **Named** export in a file.
+    ---> Default export/import syntax
+       ---> export default "name".
+       ---> import "name" from "file_dest".
+    ---> import export/import syntax
+       ---> export "name".
+       ---> import { "name" } from "file_dest".
+
++ **React is fast because it can do faster dom manipulation.**
+  
++ **Hookes**
+
++ **Hooks are normal js function written by developer**
+
++ **Most important hooks**
+    ---> useState()
+    ---> useEffect()
+
++ **Before using hooks import it as name import from react**
+
++ **hooks sync ui layer with data layer**
+
++ **useState() syntax**
+
+    ---> Const[value, setValue] = useState("initialvalue")
+  
 
   
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
