@@ -210,7 +210,49 @@
       ---> Microservices can have **independent TechStack** for each project/services.<br>
       ---> Instead of exchanging data within the same code base, microservices **communicate with an API**.<br>
 
-+ 
+      ![image](https://github.com/gitminaj/namaste-react/assets/75945276/d0c51bf6-8b94-4698-8859-015d579ec4c0)
+
+
++ **Appraoch for API Call**<br>
+    + 1st is **web Loads** --> **API Call** --> **Render** <br>
+    + 2nd is **web Loads** --> **Render** --> **API Call** --> **Re-render** <br>
+--> We will use 2nd which will lead to better user experience.
+
++ **Introduction to useEffect() hook**<br>
+      ---> useEffect() hook is normal js function which takes 2 argument. <br>
+      ---> 1st argument - Call back function. <br>
+      ---> 2st argument - Dependency array. (more on this in upcoming sessions) <br>
+      ---> useEffect() is called after the component is rendered.<br>
+  syntax
+  ```
+  useEffect(() =>{
+   console.log("useEffect Called")
+  })
+  ```
++ **fetch() function**<br>
+      ---> fetch is given by browser(js engine).<br>
+      ---> fetch returns promise.<br>
+      ---> fetch function gives readable strings, which needs to be converted to json.<br>
+     
++ **Shimmer UI**<br>
+      ---> shimmer ui ressembles the page's actual UI without the content.<br>
+      ---> To increase user experience shimmer ui is to Load the fake page before the actuall page loads.<br>
+
++ **Conditional Rendering**<br>
+     ---> If we render our page with some condition it is called conditional rendering.<br>
+  ```
+  if(restauList.length === 0){
+   return <Shimmer />
+  }
+  ```
+
++ **More on useState() hooks**<br>
+    ```
+    const [value, setValue] = useState();
+    ```
+     ---> how a constant can be changed? <br>
+     ---> Every time state variable changes component re-render and new variable is created.<br>
+
 
   
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
