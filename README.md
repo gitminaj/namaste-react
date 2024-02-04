@@ -80,7 +80,7 @@
 + **script in package.json**<br>
      ---> "script" : { "start": "parcel index.html",
                        "build" : "parcel build index.html"
-  }
+  }<br>
      ---> now i can run the project by just **npm run start**
 
 + **JSX is not the part of react**
@@ -93,7 +93,7 @@
 
 + **React.createElement --> ReactElement - js object --> HTML Element(render)**
 
-+ ** jsx --> React.createElement --> js object --> HTML Element(render) **
++ **jsx --> React.createElement --> js object --> HTML Element(render)**
 
 + **class based component(old) vs Functional component(new)**
 
@@ -108,9 +108,9 @@
 + **We can write javascript insidie JSX using "{}"**
 
 + **We can execute component in three ways**<br>
-  ---> {Title()}
-  ---> <Title> </Title>
-  ---> <Title/>
+  ---> {Title()} <br>
+  ---> <Title> </Title> <br>
+  ---> <Title/> <br>
 
 ## 4. Learning from fourth episode (Talk is cheap show me the code)
 
@@ -196,7 +196,21 @@
       ---> Finds out the difference between current virtual dom and updated virtual dom.<br>
       ---> Then it will update the actuall dom on every render cycle.
 
-  
+## 6. Learning from sixth episode (Exploring the world)
+
++ **Monolithic and microservices architecture**<br>
+   + **Monolithic architecture**<br>
+      ---> Monolith architecture has single code base, every functionality is in single project.<br>
+      ---> Developers build client-side UI, a database, and a server-side application on a single code base.<br>
+      ---> If we want to change any one functionality we have to deploy whole project again.<br>
+
+   + **Microservices/Single responsibility principle/Distributed architecture**<br>
+      ---> Code base/Project is **divided into small services**.<br>
+      ---> Each microservice **works to accomplish a single feature** or business logic.<br>
+      ---> Microservices can have **independent TechStack** for each project/services.<br>
+      ---> Instead of exchanging data within the same code base, microservices **communicate with an API**.<br>
+
++ 
 
   
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
