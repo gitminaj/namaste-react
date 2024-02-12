@@ -252,7 +252,80 @@
     ```
      ---> how a constant can be changed? <br>
      ---> Every time state variable changes component re-render and new variable is created.<br>
+## 7. Learning from seventh episode (Finding the path)
 
+   + **More on useEffect() hook.**<br>
+    ---> useEffect( (call back function), [dependency array] )<br>
+    ---> **case 1:** If no dependency array ==> useEffect() is called on every render. <br>
+    ---> **case 2:** If dependency array is empty [] ==> useEffect() is called on initial render. (just once in render cycle) <br>
+```
+    useEffect(()=>{
+        console.log("just called once")
+     },[])
+```
+   ---> **case 3:** If dependency array has state variable ==> useEffect() is called on everythime the state variable changes.<br>
+```
+    useEffect(()=>{
+        console.log("just called once")
+     },[stateVariable])
+``` 
+ + **Best practise/rules for useState hook**<br>
+ 
+    ---> Never create state variable outside the component.<br>
+    ---> State variable work is to create local variable for functional component.<br>
+    ---> Try to make state variable at the top of component.<br>
+    ---> Never use/create state variable inside condition.<br>
+    
++ **Introductio to react router**<br>
+    ---> Installing react router library
+  ```
+   npm i react-router-dom
+  ```
+   ---> For routing import createBrowserRouter<br>
+  ```
+   import { createBrowserRouter } from "react-router-dom";
 
-  
+   const appRouter = createBrowserRouter(
+   [
+    {
+      path: "/",
+      element: <Applayout/>
+    }
+   ]
+  )
+  ```
+  ---> We need router provider to route app.<br>
+  ```
+  import { RouterProvider } from "react-router-dom";
+
+  root.render(<RouterProvider router={appRouter} />)  
+  ```
+   ---> If the URL is wrong we can show custom error by adding **errorElement in createBrowserRouter**<br>
+
+   ---> react-router-dom gives us a special hook { useRouterError }<br>
+   ---> Above hook is used to show specific error/more precise error.<br>
+
+ + **ChildrenRoute**
+
+   ---> <Outlet/> react-router-dom component to render component according to path as children.<br>
+   ---> To route the page in react never use <a> anchor tag, because it refresh the whole page.<br>
+   ---> use Link component which is given by react-router-dom.<br>
+   ---> <Link to=""> gives smooth experience it does not refresh whole page, using the link component react single page application is created<br>
+
++ **Types of routing**
+
+    ---> There are 2 types of routeing.<br>
+    ---> 1. Client side routing: csr does not makes network call every time only first time.<br>
+    ---> 2. Server side routing: ssr makes network call and refresh the page.<br>
+
++ **useParam**
+
+   ---> useParam() hook is given by react-router-dom  to catch the value of url.<br>
+   ---> How to give dynamic value in URL?<br>
+```
+  path: "/restaurant/:resId"
+```
+ ---> " : " is used to enter dynamic value.<br>
+ ---> We can get this dynamic value using useParam hook.
+
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
