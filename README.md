@@ -328,4 +328,6 @@
  ---> " : " is used to enter dynamic value.<br>
  ---> We can get this dynamic value using useParam hook.
 
+ sifted to new repo because of some problem: https://github.com/gitminaj/-namaste-react-codes
+
 Most React tutorials typically commence with the installation of a bundler and swiftly transition to React code. However, this particular tutorial takes a distinctive approach by elucidating the entire process from the ground up. It delves into the intricacies of constructing React, leaving me astounded and pleasantly surprised at every turn. Each minute unfolds a new revelation, fostering a continuous learning experience.
